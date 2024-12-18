@@ -1,54 +1,14 @@
-<div align="center">
-
-![logo](./images/logo.png)
-
-</div>
-
-<div align="center">
-
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=jingyaogong/minimind)
-[![GitHub Repo stars](https://img.shields.io/github/stars/jingyaogong/minimind?style=social)](https://github.com/jingyaogong/minimind/stargazers)
-[![GitHub Code License](https://img.shields.io/github/license/jingyaogong/minimind)](LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/jingyaogong/minimind)](https://github.com/jingyaogong/minimind/commits/master)
-[![GitHub pull request](https://img.shields.io/badge/PRs-welcome-blue)](https://github.com/jingyaogong/minimind/pulls)
-[![Collection](https://img.shields.io/badge/🤗-MiniMind%20%20Collection-blue)](https://huggingface.co/collections/jingyaogong/minimind-66caf8d999f5c7fa64f399e5)
-
-</div>
-
-<div align="center">
-  <h3>"大道至简"</h3>
-</div>
-
-<div align="center">
-
-中文 | [English](./README_en.md)
-
-</div>
-
-* 本开源项目旨在完全从0开始，最快仅用3小时！即可训练出仅为26.88M大小的微型语言模型**MiniMind**。
-* **MiniMind**极其轻量，最小版本体积约是 GPT3 的 $\frac{1}{7000}$，力求做到最普通的个人GPU也可快速推理甚至训练。
-* **MiniMind**发布了大模型极简结构，数据集清洗和预处理、监督预训练(Pretrain)、有监督指令微调(SFT)、低秩自适应(LoRA)
+* 本开源项目旨在完全从0开始，最快仅用3小时！即可训练出仅为26.88M大小的微型语言模型**CGLLM**。
+* **CGLLM**极其轻量，最小版本体积约是 GPT3 的 $\frac{1}{7000}$，力求做到最普通的个人GPU也可快速推理甚至训练。
+* **CGLLM**发布了大模型极简结构，数据集清洗和预处理、监督预训练(Pretrain)、有监督指令微调(SFT)、低秩自适应(LoRA)
   微调，无奖励强化学习直接偏好对齐(DPO)的全阶段代码，也包含拓展共享混合专家(MoE)
-  的稀疏模型；拓展视觉多模态VLM: [MiniMind-V](https://github.com/jingyaogong/minimind-v)。
+  的稀疏模型；拓展视觉多模态VLM: [CGLLM-V]。
 * 这不仅是一个开源模型的实现，也是入门大语言模型（LLM）的教程。
 * 希望此项目能为研究者提供一个抛砖引玉的入门示例，帮助大家快速上手并对LLM领域产生更多的探索与创新。
 
   > 为防止误读，「最快3小时」是指您需要具备＞本人硬件配置的机器，具体规格的详细信息将在下文提供。
 
 ---
-
-
-
-
-<div align="center">
-
-![streamlit](./images/streamlit.gif)
-
-[ModelScope在线测试](https://www.modelscope.cn/studios/gongjy/minimind) | [Bilibili视频链接](https://www.bilibili.com/video/BV12dHPeqE72/?share_source=copy_web&vd_source=670c2504f88726f8cf4a21ef6147c0e8)
-
----
-
-</div>
 
 # 📌 Introduction
 
@@ -77,7 +37,7 @@
 
 项目包含：
 
-- 公开MiniMind模型代码（包含Dense和MoE模型）、Pretrain、SFT指令微调、LoRA微调、DPO偏好优化的全过程代码、数据集和来源。
+- 公开CGLLM模型代码（包含Dense和MoE模型）、Pretrain、SFT指令微调、LoRA微调、DPO偏好优化的全过程代码、数据集和来源。
 - 兼容`transformers`、`accelerate`、`trl`、`peft`等流行框架。
 - 训练支持单机单卡、单机多卡(DDP、DeepSpeed)训练，使用wandb可视化训练流程。支持在任意位置停止，及在任意位置继续训练。
 - 在Ceval数据集上进行模型测试的代码。
